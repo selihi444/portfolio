@@ -83,7 +83,7 @@ export function AboutSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9 }}
             viewport={{ once: true }}
-            className={`rounded-[18px] p-8 text-center w-[80%] ${isDark? "bg-[url('gbdack.jpg')]": "bg-[url('bgwhit.jpg')]"} bg-cover bg-center border-1 border-primary`}
+            className={`rounded-[18px] p-8 text-center w-[80%] ${isDark? "bg-[url('/gbdack.jpg')]": "bg-[url('/bgwhit.jpg')]"} bg-cover bg-center border-1 border-primary`}
             
           >
             <div className="w-42 h-42 rounded-full mx-auto  flex items-center justify-center  border-1 border-primary hover:border-none   ">

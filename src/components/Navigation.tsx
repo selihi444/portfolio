@@ -1,9 +1,15 @@
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
-import { Moon, Sun, Menu, X } from "lucide-react";
+import { Moon, Sun, Menu, X, Download, ArrowDownToLine } from "lucide-react";
 import { useContext } from "react";
 import { Mycontext } from "./Themcontext";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
+
 
 export function Navigation() {
 const { isDark, setIsDark } = useContext(Mycontext);
@@ -41,11 +47,36 @@ const { isDark, setIsDark } = useContext(Mycontext);
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="text-xl font-medium flex gap-5">
+            <HoverCard>
+              <HoverCardTrigger >
+                   <Avatar>
+                    <AvatarImage src="myportfolio1.jpg" />
+           
+                   </Avatar>
+              </HoverCardTrigger>
+             <HoverCardContent className="w-80 ">
+                  <div className="flex justify-between gap-4 ">
+                    <Avatar>
+                       <AvatarImage src="myportfolio1.jpg" />
+                      <AvatarFallback>AS</AvatarFallback>
+                    </Avatar>
+                    <div className="space-y-1">
+                       <h4 className="text-sm font-semibold">SELiHI</h4>
+                       <p className="text-sm">
+                           
+                            Je transforme des idées en projets concrets.  
+                      
 
-          <Avatar>
-            <AvatarImage src="myportfolio1.jpg" />
-            {/* <AvatarFallback>CN</AvatarFallback> */}
-          </Avatar>
+                               </p>
+                          <div className="text-muted-foreground text-xs">
+                             Toujours motivé
+                          </div>
+                    </div>
+                  </div>
+             </HoverCardContent>
+            </HoverCard>
+
+         
           <div>
             <span className="text-primary">Achraf </span>
             <span className="text-muted-foreground">Selihi</span>
@@ -75,6 +106,11 @@ const { isDark, setIsDark } = useContext(Mycontext);
             >
               {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
             </Button>
+                <a 
+             href="AF_cv25.pdf" download className="px-4 py-2  text-muted-foreground hover:text-foreground rounded ">
+
+             <ArrowDownToLine className="w-4 h-5"/>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -95,6 +131,8 @@ const { isDark, setIsDark } = useContext(Mycontext);
             >
               {isMobileMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
             </Button>
+        
+
           </div>
         </div>
 

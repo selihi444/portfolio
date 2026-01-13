@@ -16,22 +16,23 @@ export function ProjectsSection() {
       liveUrl: "https://pin.it/6jLsBDDy4",
       githubUrl: "https://github.com/selihi444/ecommerce-platform.git"
     },
+   
     {
+      title: "Boutique en ligne ",
+      description: " Description Ce projet est une boutique en ligne dédiée à la vente des accessoires et produits pour femmes. ",
+      image: "bouti.png",
+      technologies: ["HTML", "CSS", "PHP", "SQL"],
+      liveUrl: "https://example.com",
+      githubUrl: "https://github.com/selihi444/botiques_ecom.git"
+    },
+     {
       title: "gestion des Ressources Humaines App",
       description: "Une application de gestion des ressources humaines (GRH) est un logiciel qui centralise et automatise les tâches RH (paie, congés, recrutement, talents, formation, administration) (en cours).",
       image: "Slide5.jpg",
       technologies: ["Next.js", "JavaScript", "SQL", "Radix ui","React"],
       liveUrl: "",
       githubUrl: "https://github.com/selihi444"
-    },
-    // {
-    //   title: "Weather Dashboard",
-    //   description: "A beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics.",
-    //   image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
-    //   technologies: ["Vue.js", "Express.js", "MongoDB", "Chart.js", "OpenWeather API"],
-    //   liveUrl: "https://example.com",
-    //   githubUrl: "https://github.com"
-    // },
+    }
     // {
     //   title: "Social Media Dashboard",
     //   description: "A comprehensive social media management tool with analytics, scheduling, and multi-platform integration.",
@@ -74,7 +75,7 @@ export function ProjectsSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}

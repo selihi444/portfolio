@@ -25,14 +25,14 @@ export function ProjectsSection() {
       liveUrl: "https://example.com",
       githubUrl: "https://github.com/selihi444/botiques_ecom.git"
     },
-    //  {
-    //   title: "gestion des Ressources Humaines App",
-    //   description: "Une application de gestion des ressources humaines (GRH) est un logiciel qui centralise et automatise les tâches RH (paie, congés, recrutement, talents, formation, administration) (en cours).",
-    //   image: "Slide5.jpg",
-    //   technologies: ["Next.js", "JavaScript", "SQL", "Radix ui","React"],
-    //   liveUrl: "",
-    //   githubUrl: "https://github.com/selihi444"
-    // }
+     {
+      title: "gestion des Ressources Humaines App",
+      description: "Une application de gestion des ressources humaines (GRH) est un logiciel qui centralise et automatise les tâches RH (paie, congés, recrutement, talents, formation, administration) (en cours).",
+      image: "Slide5.jpg",
+      technologies: ["Next.js", "JavaScript", "SQL", "Radix ui","React"],
+      liveUrl: "",
+      githubUrl: "https://github.com/selihi444"
+    }
     // {
     //   title: "Social Media Dashboard",
     //   description: "A comprehensive social media management tool with analytics, scheduling, and multi-platform integration.",
